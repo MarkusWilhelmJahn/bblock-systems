@@ -1,0 +1,135 @@
+{
+  "name": "My OGC Building Blocks repository",
+  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
+  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
+  "modified": "2025-05-26T16:21:56.418395",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
+      "shortCommitId": "\"d54737",
+      "date": "2025-04-28T10:28:17+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
+  "gitHubRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/",
+  "baseURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
+  "viewerURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
+  "validationReport": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.bbr.template.mySchema",
+      "$schema": "metaschema.yaml",
+      "name": "My Schema",
+      "abstract": "An example schema defining the set of properties of any type of object.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2025-03-28",
+      "link": "https://github.com/opengeospatial/bblock-template",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "templates"
+      ],
+      "shaclRules": {
+        "ogc.bbr.template.mySchema": [
+          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+        ]
+      },
+      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld",
+      "schema": {
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.json"
+      },
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/mySchema/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/mySchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.mySchema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.template.myFeature",
+      "name": "Custom Feature",
+      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2025-03-28",
+      "sources": [
+        {
+          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.bbr.template.mySchema",
+        "ogc.geo.features.feature"
+      ],
+      "tags": [
+        "feature",
+        "examples"
+      ],
+      "group": "Examples",
+      "highlighted": true,
+      "shaclRules": {
+        "ogc.bbr.template.mySchema": [
+          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+        ]
+      },
+      "schema": {
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.json"
+      },
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/schema.yaml",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/context.jsonld",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/myFeature/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.myFeature"
+        }
+      }
+    }
+  ]
+}
