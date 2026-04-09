@@ -7,6 +7,7 @@
       "@context": {
         "@base": "https://w3id.org/ogc/hosted/focal/lt/"
       }
-    }
+    },
+    "LES_OBL": "focal-prop:lesniOblast"
   }
 }

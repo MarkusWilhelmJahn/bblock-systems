@@ -14,14 +14,19 @@
 
 focal:properties a skos:ConceptScheme ;
   skos:prefLabel "FOCAL Properties" ;
-  skos:hasTopConcept focal-prop:lesniTyp ;
+  skos:hasTopConcept focal-prop:lesniTyp, focal-prop:lesniOblast ;
 .
 
 focal-prop:lesniTyp a skos:Concept, owl:ObjectProperty ;
-  skos:prefLabel "LesnÌ typ"@cz, "Forest type"@en ;
+  skos:prefLabel "lesnÌ typ"@cz, "forest type"@en ;
   skos:topConceptOf focal:properties ;
   skos:inScheme focal:properties ;
   rdfs:range focal-lt:LT ;
+.
+focal-prop:lesniOblast a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "lesnÌ oblast"@cz, "forest region"@en ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
 .
 
 focal-lt:LT a skos:ConceptScheme, owl:Class ;
