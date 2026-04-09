@@ -22,12 +22,12 @@
     rdfs:label "FOCAL Ontology" ;
     dct:abstract "RDF contents for the FOCAL ontology"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-04-09T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-04-09"^^xsd:date ;
     skos:inScheme <https://markuswilhelmjahn.github.io/bblock-systems/> ;
@@ -65,27 +65,27 @@
     dcat:keyword "examples",
         "feature" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.focal.mySchema> ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json> ;
-            prof:hasRole role:schema ] ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.focal.mySchema> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.focal.mySchema>,
         <bblocks://ogc.geo.features.feature> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -98,18 +98,18 @@
 
 <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Ne9c331c7d7384f90addb3c83b9454b08 ;
+    prov:wasAttributedTo _:Nea52e8883ee74621ab3d1b45f5e04c26 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-04-09T12:23:43.198070"^^xsd:dateTime ;
-            prov:startedAtTime "2026-04-09T12:23:42.997844"^^xsd:dateTime ;
+            prov:endedAtTime "2026-04-09T12:29:10.068844"^^xsd:dateTime ;
+            prov:startedAtTime "2026-04-09T12:29:09.906088"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:b1a5033759bb181777bf78132f475afe99721a55" ;
-                    rdfs:seeAlso <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ] ;
-            prov:wasAssociatedWith _:Ne9c331c7d7384f90addb3c83b9454b08 ] .
+                    dct:hasVersion "git:74c76b9f39ddb9631dc01fbd6bcb8e379f3249f7" ;
+                    rdfs:seeAlso <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:Nea52e8883ee74621ab3d1b45f5e04c26 ] .
 
 <bblocks://ogc.focal.mySchema> a skos:Concept,
         dcat:Dataset,
@@ -163,29 +163,29 @@ A "Tell me more" link will appear if there is an additional description with a l
     dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
 including [links](https://google.es).
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-04-09T12:23:41.271877"^^xsd:dateTime ;
+    dct:modified "2026-04-09T12:29:08.188925"^^xsd:dateTime ;
     void:sparqlEndpoint <http://defs-hosted.opengis.net/fuseki-hosted/query> ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.focal.focal-ontology>,
         <bblocks://ogc.focal.myFeature>,
         <bblocks://ogc.focal.mySchema> ;
     skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld> ],
-        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> ] ;
+            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld> ] ;
     foaf:homepage <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     bblocks:hasValidationReport <https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.html> .
 
-_:Ne9c331c7d7384f90addb3c83b9454b08 a prov:Agent,
+_:Nea52e8883ee74621ab3d1b45f5e04c26 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.27" ;
