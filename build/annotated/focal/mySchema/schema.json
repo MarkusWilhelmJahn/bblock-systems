@@ -14,40 +14,52 @@
       "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniOblast"
     },
     "LO_CAST": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast"
     },
     "UDRZBA": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA"
     },
     "ZMENA": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniZMENA"
     },
     "ZADOST": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniZADOST"
     },
     "CHS": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniCHS"
     },
     "PCHS": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniPCHS"
     },
     "OVER_T": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniOVERT"
     },
     "ROK_MAP": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP"
     },
     "ID1": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniID1"
     },
     "SLT": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniSLT"
     },
     "PLOCHA": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA"
     },
     "DS_OPRL": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL"
     }
   },
   "required": [

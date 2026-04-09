@@ -53,15 +53,15 @@ path	@id	schema
 /links/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /properties/LT	https://w3id.org/ogc/hosted/focal/properties/lesniTyp	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
 /properties/LES_OBL	https://w3id.org/ogc/hosted/focal/properties/lesniOblast	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/LO_CAST		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/UDRZBA		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/ZMENA		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/ZADOST		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/CHS		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/PCHS		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/OVER_T		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/ROK_MAP		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/ID1		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/SLT		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/PLOCHA		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/DS_OPRL		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/LO_CAST	https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/UDRZBA	https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/ZMENA	https://w3id.org/ogc/hosted/focal/properties/lesniZMENA	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/ZADOST	https://w3id.org/ogc/hosted/focal/properties/lesniZADOST	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/CHS	https://w3id.org/ogc/hosted/focal/properties/lesniCHS	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/PCHS	https://w3id.org/ogc/hosted/focal/properties/lesniPCHS	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/OVER_T	https://w3id.org/ogc/hosted/focal/properties/lesniOVERT	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/ROK_MAP	https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/ID1	https://w3id.org/ogc/hosted/focal/properties/lesniID1	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/SLT	https://w3id.org/ogc/hosted/focal/properties/lesniSLT	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/PLOCHA	https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/DS_OPRL	https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml

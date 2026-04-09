@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.focal.myFeature - Custom Feature",
   "bblockName": "Custom Feature",
   "bblockId": "ogc.focal.myFeature",
-  "generated": "2026-04-09T17:31:08.616183+00:00",
+  "generated": "2026-04-09T17:57:34.236041+00:00",
   "result": false,
   "items": [
     {
@@ -49,7 +49,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "feature-fail.ttl",
-              "size": 2015,
+              "size": 2171,
               "isError": false,
               "message": "Output Turtle feature-fail.ttl created"
             }
@@ -83,38 +83,38 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:N97140fdd21fe49449cf2a9bf5b506a39",
+                    "_:Ne4ff9b5e7ff64c389bca6c2931806e09",
+                    "_:N76fccdc6a3c54ffeb8961cded0c21f8b",
+                    "_:N279e23784a6d44fab50d135fd692e24c",
+                    "_:N43cd4d37225c4adfa7de871d4227a9cb",
+                    "_:N36ce50eb6d0e41f1a0183fa387fe6649",
+                    "_:Nb0a375325708426591451c3d02b3c448",
+                    "_:Nd159f2cbfe274a39b5b0e843e1343043",
+                    "_:N7e9105c234be457599204231cdac81b6",
+                    "_:Nf26a8de246a44eaea005df8945671f84",
+                    "_:Ndc17dc6abfb84010bd01b3867ab01063",
+                    "_:N1623b76119004d7d9ccfe9c207a5bfa0",
+                    "_:Nc9102302fff54dcb8250b8a926fa0052"
+                  ]
+                },
+                "geojson:GeometryShape": {
                   "nodes": []
                 },
                 "geojson:LinkShape": {
                   "nodes": []
                 },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "_:N29208cdfc6994f589de1b01c5c50649b",
-                    "_:N3c4df8bfeed54ee388bc367d29a87675",
-                    "_:N8371c78d55bf4dc48de69b33814b7c04",
-                    "_:Nc919c0e37f7445258e3b0903eaaf68da",
-                    "_:N198ac98282c3413fad610de4f5027c18",
-                    "_:Nfa545c25d54842b0a98b8511c8f19a23",
-                    "_:N3c926139c66b432d920fa122ebb8ede9",
-                    "_:Nde97a89493414d148e492db85e440271",
-                    "_:N98d5e03867704077ad400f8f3062af6f",
-                    "_:N12a79b538d42410f91ca4ac387c86428",
-                    "_:N275bdbdf1d124b988a3c6cacf2f9baaa",
-                    "_:Nc2c2b6cb71964863a6104d818687bd8d",
-                    "_:N79fc87de07414423afc5e36227ae22e7"
-                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: _:N29208cdfc6994f589de1b01c5c50649b,_:N3c4df8bfeed54ee388bc367d29a87675,_:N8371c78d55bf4dc48de69b33814b7c04,_:Nc919c0e37f7445258e3b0903eaaf68da,_:N198ac98282c3413fad610de4f5027c18,_:Nfa545c25d54842b0a98b8511c8f19a23,_:N3c926139c66b432d920fa122ebb8ede9,_:Nde97a89493414d148e492db85e440271,_:N98d5e03867704077ad400f8f3062af6f,_:N12a79b538d42410f91ca4ac387c86428,_:N275bdbdf1d124b988a3c6cacf2f9baaa,_:Nc2c2b6cb71964863a6104d818687bd8d,_:N79fc87de07414423afc5e36227ae22e7\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:N97140fdd21fe49449cf2a9bf5b506a39,_:Ne4ff9b5e7ff64c389bca6c2931806e09,_:N76fccdc6a3c54ffeb8961cded0c21f8b,_:N279e23784a6d44fab50d135fd692e24c,_:N43cd4d37225c4adfa7de871d4227a9cb,_:N36ce50eb6d0e41f1a0183fa387fe6649,_:Nb0a375325708426591451c3d02b3c448,_:Nd159f2cbfe274a39b5b0e843e1343043,_:N7e9105c234be457599204231cdac81b6,_:Nf26a8de246a44eaea005df8945671f84,_:Ndc17dc6abfb84010bd01b3867ab01063,_:N1623b76119004d7d9ccfe9c207a5bfa0,_:Nc9102302fff54dcb8250b8a926fa0052\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -172,7 +172,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 2016,
+              "size": 2172,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -206,38 +206,38 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
-                "geojson:GeometryShape/sh:or/rdf:first": {
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:Ne4aa37c8d7904f76afa094333d0163a0",
+                    "_:N40e3ea9a0013418a8734b9b365b9340e",
+                    "_:Na5af7cafcbf14ee9973ab1391410d53b",
+                    "_:Nff3a32f2c4664985a60eaa3abe88f469",
+                    "_:N1cc125d2e94a46e283f0c1f1add2efbd",
+                    "_:N4f7ccb2e4bca46eda018fe86829c2a01",
+                    "_:Nfcba31b86b604ae397183185301fefd3",
+                    "_:Nf02c3f11736b4de7bfcc4cfb993980e0",
+                    "_:N70f859a9110e4ef184a6d77dff55219d",
+                    "_:Nb5051d735d47466498a64901a816aba7",
+                    "_:N380fa5f9a7aa42ee82976299824662a0",
+                    "_:Ncc1a4d6cba9b4d8ea920167a08f199d3",
+                    "_:N89a6d0ed61614dc0bda3af095a86709c"
+                  ]
+                },
+                "geojson:GeometryShape": {
                   "nodes": []
                 },
                 "geojson:LinkShape": {
                   "nodes": []
                 },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "_:Ne73ef09bef7e41b89e33a7ddedd1d846",
-                    "_:N7c549cc701ba4f2e935372fac5fe3cd1",
-                    "_:N48d38efcd79843debe92317a1a5ecd02",
-                    "_:N4eae7713ce5348d0b2fa406c2f651051",
-                    "_:N5c472e0064ab445c875a7c7740984e68",
-                    "_:N5cb6d60bbac34f28bff6e624e605ee64",
-                    "_:N8846da687dc248b3bab89e5bfaf85ae0",
-                    "_:Nf74f3405e45f4f25a3f1ea709035fcbf",
-                    "_:N597e353e2e844a2aa7171de4017f0a86",
-                    "_:Nefba82a6a90942289927422ac2417e60",
-                    "_:N0cb485583124482ea974115c06cb81c5",
-                    "_:N5664339b39844ce0afa67dbd26ae409c",
-                    "_:Nc0adadde56144e5e9bfa9176a10c946d"
-                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:FeatureShape: _:Ne73ef09bef7e41b89e33a7ddedd1d846,_:N7c549cc701ba4f2e935372fac5fe3cd1,_:N48d38efcd79843debe92317a1a5ecd02,_:N4eae7713ce5348d0b2fa406c2f651051,_:N5c472e0064ab445c875a7c7740984e68,_:N5cb6d60bbac34f28bff6e624e605ee64,_:N8846da687dc248b3bab89e5bfaf85ae0,_:Nf74f3405e45f4f25a3f1ea709035fcbf,_:N597e353e2e844a2aa7171de4017f0a86,_:Nefba82a6a90942289927422ac2417e60,_:N0cb485583124482ea974115c06cb81c5,_:N5664339b39844ce0afa67dbd26ae409c,_:Nc0adadde56144e5e9bfa9176a10c946d\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:Ne4aa37c8d7904f76afa094333d0163a0,_:N40e3ea9a0013418a8734b9b365b9340e,_:Na5af7cafcbf14ee9973ab1391410d53b,_:Nff3a32f2c4664985a60eaa3abe88f469,_:N1cc125d2e94a46e283f0c1f1add2efbd,_:N4f7ccb2e4bca46eda018fe86829c2a01,_:Nfcba31b86b604ae397183185301fefd3,_:Nf02c3f11736b4de7bfcc4cfb993980e0,_:N70f859a9110e4ef184a6d77dff55219d,_:Nb5051d735d47466498a64901a816aba7,_:N380fa5f9a7aa42ee82976299824662a0,_:Ncc1a4d6cba9b4d8ea920167a08f199d3,_:N89a6d0ed61614dc0bda3af095a86709c\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -292,7 +292,7 @@
               "exception": "ValidationError",
               "errorMessage": "'LT' is a required property",
               "isError": true,
-              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance['properties']:\n    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}"
+              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniCHS'},\n                    'DS_OPRL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL'},\n                    'ID1': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniID1'},\n                    'LES_OBL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},\n                    'LO_CAST': {'type': 'string',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOVERT'},\n                    'PCHS': {'type': 'string',\n                             'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPCHS'},\n                    'PLOCHA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA'},\n                    'ROK_MAP': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP'},\n                    'SLT': {'type': 'string',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniSLT'},\n                    'UDRZBA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA'},\n                    'ZADOST': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZADOST'},\n                    'ZMENA': {'type': 'string',\n                              'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZMENA'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance['properties']:\n    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}"
             }
           ]
         }
