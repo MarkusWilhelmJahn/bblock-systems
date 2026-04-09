@@ -14,7 +14,7 @@
 
 focal:properties a skos:ConceptScheme ;
   skos:prefLabel "FOCAL Forest Type Properties" ;
-  skos:hasTopConcept focal-prop:lesniTyp, focal-prop:lesniOblast ;
+  skos:hasTopConcept focal-prop:lesniTyp, focal-prop:lesniOblast,  focal-prop:lesniOblastCast, focal-prop:lesniUDRZBA, focal-prop:lesniZMENA, focal-prop:lesniZADOST, focal-prop:lesniCHS, focal-prop:lesniPCHS, focal-prop:lesniOVERT, focal-prop:lesniROKMAP, focal-prop:lesniID1, focal-prop:lesniSLT, focal-prop:lesniPLOCHA, focal-prop:lesniDSOPRL ;
 .
 
 focal-prop:lesniTyp a skos:Concept, owl:ObjectProperty ;
