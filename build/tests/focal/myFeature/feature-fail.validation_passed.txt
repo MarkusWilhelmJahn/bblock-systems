@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-09T12:41:06.272606+00:00
+Generated 2026-04-09T17:20:02.019775+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -36,11 +36,11 @@ Validation result for https://opengeospatial.github.io/bblocks/registereditems/g
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:N361d915442da4f92ba8448704f6d78ad,_:N34db93d1feec420dbc922bad71340408,_:N52b28a9a6d9e48dcafb3a674c739ac75,_:N9e238b12cc3048b492c6c61867f5c34c,_:N0a93a1ab9f514d43a3eb05b5164a2da6,_:N0703a50330094c999eae5668508abd65,_:N72f72809a8a143cdb575e273e02fd964,_:N7aa44702910a49868066bd8936a5efab,_:Nfa57f68b8bc14fe6b14d43ce1629bcfc,_:Nf04035d203c74b7fa85ddd73a122a0cb,_:N74d507dc2f8b4a5099a80462f47fba8d,_:N3f7b6d8ab121426faa742b2cf4c14711,_:Nee09eeb33af14005ac11332a98465544
- - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N9d0262f7af7241d0ad66236bb73d3078,_:Nb9a9d62991864399807e1941d69a8f64,_:N33417abde0704801b87b1aea2932e594,_:N02711aa318dc4b5ba545b213fc58b064,_:N4a4c7ceb14dc47d49f2b3ab4b0324035,_:Ne32498e1094f4031b4a2a273494ac8f1,_:N937f0d0d32ab410c9fa6335c8a1a8828,_:Na9ecbd271d3c4d9ab6a1de2e56e30d66,_:N4064f5aa0f9a43b38b6c2e083937db53,_:N4a2daf6817f4461c903d82875a93e187,_:N5086bbd870c1458f8773e555f9b4182e,_:N5ee5108c258a41769916e49e3f94bb6a,_:N0367c3e9985b4f62919dd1317e5b1c30
 
 === End SHACL ===
 

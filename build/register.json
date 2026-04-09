@@ -3,7 +3,7 @@
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-09T12:41:05.076626",
+  "modified": "2026-04-09T17:20:00.832758",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"46c7348739fef1e5bde9f2eb3d2ca76e31b91ae7",
@@ -42,13 +42,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -97,13 +97,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/mySchema/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -159,13 +159,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/myFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
