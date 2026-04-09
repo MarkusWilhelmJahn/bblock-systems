@@ -13,43 +13,144 @@
 .
 
 focal:properties a skos:ConceptScheme ;
-  skos:prefLabel "FOCAL Properties" ;
+  skos:prefLabel "FOCAL Forest Type Properties" ;
   skos:hasTopConcept focal-prop:lesniTyp, focal-prop:lesniOblast ;
 .
 
 focal-prop:lesniTyp a skos:Concept, owl:ObjectProperty ;
-  skos:prefLabel "lesnÌ typ"@cz, "forest type"@en ;
+  skos:prefLabel "lesnÌ typ"@cz, "forest type"@en, "Waldtyp"@de ;
   skos:topConceptOf focal:properties ;
   skos:inScheme focal:properties ;
   rdfs:range focal-lt:LT ;
 .
+
 focal-prop:lesniOblast a skos:Concept, owl:DataTypeProperty ;
-  skos:prefLabel "lesnÌ oblast"@cz, "forest region"@en ;
+  skos:prefLabel "lesnÌ oblast"@cz, "forest region"@en, "Waldgebiet"@de  ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniOblastCast a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "lesnÌ oblast cast"@cz, "forest region part"@en, "Waldgebietsteil"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniUDRZBA a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Rok poslední změny dat"@cz, "Year of last data update"@en, "Jahr der letzten Datenänderung"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniZMENA a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Na û·dost vlastnÌka"@cz, "Change: based on owner request"@en, "Änderung: auf Antrag des Eigentümers"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniZADOST a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Číselné zařazení žádosti"@cz, "ID of the request"@en, "ID des Antrags"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniCHS a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Cílový hospodářský soubor"@cz, "Target management unit"@en, "Ziel-Wirtschaftseinheit"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniPCHS a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Podsoubor cílového hospodářského souboru"@cz, "Subunit of the target management unit"@en, "Teilbestand der Ziel-Wirtschaftseinheit"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniOVERT a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Ověřeno v terénu"@cz, "Field verified"@en, "Im Gelände überprüft"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniROKMAP a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Rok sběru dat"@cz, "Year of data collection"@en, "Jahr der Datenerhebung"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniID1 a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Jednoznačný identifikátor"@cz, "Unique identifier"@en, "Eindeutige Kennung"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniSLT a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Soubor lesních typů"@cz, "Forest type classification system"@en, "Waldtypklassifizierungssystem"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniPLOCHA a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "V metrech čtverečních"@cz, "Area in square meters"@en, "Fläche in Quadratmetern"@de ;
+  skos:topConceptOf focal:properties ;
+  skos:inScheme focal:properties ;
+.
+
+focal-prop:lesniDSOPRL a skos:Concept, owl:DataTypeProperty ;
+  skos:prefLabel "Datový soubor oblastní plán rozvoje lesů"@cz, "Dataset of the regional forest development plan"@en, "Datensatz des regionalen Waldentwicklungsplans"@de ;
   skos:topConceptOf focal:properties ;
   skos:inScheme focal:properties ;
 .
 
 focal-lt:LT a skos:ConceptScheme, owl:Class ;
-  skos:prefLabel "LesnÌ typ"@cz, "Forest type"@en ;
-  skos:hasTopConcept focal-lt:2S1 ;
+  skos:prefLabel "lesnÌ typ"@cz, "forest type"@en, "Waldtyp"@de ;
+  skos:hasTopConcept focal-lt:2I2, focal-lt:2S1, focal-lt:2L1, focal-lt:NE ;
+.
+
+focal-lt:2I2 a skos:Concept, focal-lt:LT ;
+  skos:prefLabel "2I2 - Kyselá hlinitá buková doubrava chudší"@cz,
+    "2I2 - Acidic loamy beech-oak forest (poorer variant)"@en,
+    "2I2 - Saure lehmige Buchen-Eichenwälder (ärmere Ausprägung)"@de ;
+  skos:definition "2I2 – kyselá hlinitá buková doubrava chudší, lesní typ 2. lesního vegetačního stupně na kyselých, živinami chudších hlinitých půdách"@cz,
+    "2I2 – Acidic loamy beech-oak forest (poorer variant), a forest type of the 2nd forest vegetation zone on acidic, nutrient-poor loamy soils"@en,
+    "2I2 – Saure lehmige Buchen-Eichenwälder (ärmere Ausprägung), ein Waldtyp der 2. forstlichen Vegetationsstufe auf sauren, nährstoffärmeren Lehmböden"@de ;
+  skos:notation "2I2" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
 .
 
 focal-lt:2S1 a skos:Concept, focal-lt:LT ;
-  skos:prefLabel "2S1 - Svěží bukodubová stanoviště"@cz,
-    "2S1 - Fresh beech–oak sites"@en ;
-  skos:definition "2S1 - svěží bukodubový les (lesní typ 2. lesního vegetačního stupně na živných až středně živných půdách)"@cz,
-    "2S1 - Fresh beech–oak forest (forest type of the 2nd forest vegetation zone on mesic, moderately fertile soils)"@en ;
+  skos:prefLabel "2S1 - Svěží buková doubrava modální"@cz,
+    "2S1 - Fresh beech-oak forest (modal)"@en,
+    "2S1 - Frische Buchen-Eichenwälder (typisch)"@de ;
+  skos:definition "2S1 – svěží buková doubrava modální, lesní typ 2. lesního vegetačního stupně na živinami středně bohatých, svěžích stanovištích"@cz,
+    "2S1 – Fresh beech-oak forest (modal), a forest type of the 2nd forest vegetation zone on moderately nutrient-rich, fresh sites"@en,
+    "2S1 – Frische Buchen-Eichenwälder (typisch), ein Waldtyp der 2. forstlichen Vegetationsstufe auf mäßig nährstoffreichen, frischen Standorten"@de ;
   skos:notation "2S1" ;
   skos:topConceptOf focal-lt:LT ;
   skos:inScheme focal-lt:LT ;
 .
 
 focal-lt:2L1 a skos:Concept, focal-lt:LT ;
-  skos:prefLabel "2L1 - Nivní (lužní) dubová stanoviště"@cz,
-    "2L1 - Floodplain oak sites"@en ;
-  skos:definition "2L1 – lužní (nivní) dubový les 2. lesního vegetačního stupně na vlhkých až periodicky zamokřených půdách"@cz,
-    "2L1 – Oak floodplain forest (forest type of the 2nd forest vegetation zone on moist to periodically waterlogged soils)"@en ;
+  skos:prefLabel "2L1 - Pahorkatinný luh modální"@cz,
+    "2L1 - Hilly floodplain forest (modal)"@en,
+    "2L1 - Hügelländischer Auwald (typisch)"@de ;
+  skos:definition "2L1 – pahorkatinný luh modální, lesní typ 2. lesního vegetačního stupně v pahorkatinách na vlhkých až periodicky zaplavovaných stanovištích"@cz,
+    "2L1 – Hilly floodplain forest (modal), a forest type of the 2nd forest vegetation zone in hilly areas on moist to periodically flooded sites"@en,
+    "2L1 – Hügelländischer Auwald (typisch), ein Waldtyp der 2. forstlichen Vegetationsstufe im Hügelland auf feuchten bis periodisch überfluteten Standorten"@de ;
   skos:notation "2L1" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.
+
+focal-lt:NE a skos:Concept, focal-lt:LT ;
+  skos:prefLabel "NE - typologické bezlesí"@cz,
+    "NE - Non-forest unit"@en,
+    "NE - Nichtwaldgebiet"@de ;
+  skos:definition "NE – typologické bezlesí, území bez lesního porostu zařazené v typologickém systému"@cz,
+    "NE – Non-forest unit, an area without forest cover classified within the typological system"@en,
+    "NE – Nichtwaldgebiet, eine Fläche ohne Waldbestand, die im typologischen System erfasst ist"@de ;
+  skos:notation "NE" ;
   skos:topConceptOf focal-lt:LT ;
   skos:inScheme focal-lt:LT ;
 .
