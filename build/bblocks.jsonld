@@ -166,9 +166,9 @@
   ],
   "name": "Building Blocks - FOCAL Forest Typology OGC Smart Blocks repository",
   "abstract": "This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.\n",
-  "description": "# The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
+  "description": "### The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-12T10:23:36.666057",
+  "modified": "2026-04-12T10:32:06.647750",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
@@ -379,8 +379,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.focal.mySchema"
+        "bblocks://ogc.focal.mySchema",
+        "bblocks://ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -391,18 +391,18 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "rdfs:seeAlso": "bblocks://ogc.focal.mySchema",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
         },
         {
           "prof:hasArtifact": [
-            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.focal.mySchema",
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"

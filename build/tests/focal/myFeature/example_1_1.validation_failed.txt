@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-12T10:23:38.071322+00:00
+Generated 2026-04-12T10:32:08.005448+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -20,23 +20,23 @@ On instance['type']:
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: _:Naefd7b989d21459d8cb044aeb08512ac,_:Nd906192667474f61b378d3b5f28db80b,_:N489753d4529e4d1abd7c5f40855440f6,_:Naef5837191df49309afdba661d3fc421,_:N522eee087acd4efb955c9a8127e32f09,_:Ndfe58fb56c3f4cf9b47feb0b2a3bdae3,_:N4c34782b8eab43aebbb3660a2d6539a1,_:N49fc2541baa04c268bac7bedb1b930de,_:Nbb11ca6239d046189b8f24929b269d46,_:N1072f6fde8ad4677a1563b85c6d14357,_:Ncd29f0671c4642148db4397e75d76f99,_:N7b6cf08463fd4fe5824ed68138c10def,_:N9b7f815b1c6e48bc8e3b0b45d81dfcf6
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape: *none*
-
 Validation result for _sources/mySchema/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/mySchema/rules.shacl:
  - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Neb9cc38517c24d1bbf4e07289f70574e,_:N57f8228f69ba412f9c51e802f1b29f72,_:N0a5b516a6624429ba123afaf39bbab73,_:N5f8636ba2a3d404e95b2e4a8d834dbfd,_:N45eea3709f8244ed9abe0e366665c68f,_:N8d72643047fe45bb8eacb932dcbce7bb,_:Nb1981808a5654645a63c1b3990272bdf,_:N874e772a746a4131b9c2aef9cd983d08,_:Nc5f2447a5b964a0b8cba8c0a33136bea,_:Naf63917b9d8848a2b8c9ed8e9a2d8823,_:Nccbe7fc0fdd1456e836ba8ae3fd5c42b,_:N064c3acf9c014aba87c7c53858375b18,_:N16264026c9604eecb2a62401831b5594
+ - Shape geojson:GeometryShape: *none*
 
 === End SHACL ===
 
