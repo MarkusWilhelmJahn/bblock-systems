@@ -3,12 +3,12 @@
   "abstract": "This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.\n",
   "description": "### The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-12T10:32:06.647750",
+  "modified": "2026-04-13T09:10:14.815884",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
-      "shortCommitId": "\"8183e8",
-      "date": "2026-04-10T08:50:01+00:00\""
+      "commitId": "\"267c820f596a0dc60f2a48140288ad2fd76f66fa",
+      "shortCommitId": "\"267c82",
+      "date": "2026-04-13T09:07:50+00:00\""
     }
   },
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
@@ -158,6 +158,40 @@
       "rdfData": [],
       "validationPassed": false,
       "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/myFeature/",
+      "transforms": [
+        {
+          "id": "to-crs5555",
+          "type": "python",
+          "inputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "label": "JSON",
+                "defaultExtension": "json"
+              }
+            ]
+          },
+          "outputs": {
+            "mediaTypes": [
+              {
+                "mimeType": "application/json",
+                "defaultExtension": "json",
+                "label": "JSON"
+              }
+            ]
+          },
+          "metadata": {
+            "dependencies": {
+              "pip": "geopandas>=1.1.3",
+              "python": ">=3.10"
+            },
+            "_prefixes": {
+              "mynamespace": "http://example.com/mythings/"
+            }
+          },
+          "code": "import json, geopandas as pd\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Print current CRS\nprint(gdf.crs)\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Convert back to GeoJSON-like dict\noutput_data = json.loads(gdf.to_json())\n"
+        }
+      ],
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
