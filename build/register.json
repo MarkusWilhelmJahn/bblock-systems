@@ -3,12 +3,12 @@
   "abstract": "This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.\n",
   "description": "### The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-13T09:41:44.910277",
+  "modified": "2026-04-13T10:40:28.453286",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"a25f43b747988f7f0c34fed94a0f65863e7ee452",
-      "shortCommitId": "\"a25f43",
-      "date": "2026-04-13T09:38:00+00:00\""
+      "commitId": "\"a1dc57f4c633cd8555051082178e51efa6c0b2c1",
+      "shortCommitId": "\"a1dc57",
+      "date": "2026-04-13T10:28:36+00:00\""
     }
   },
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
@@ -30,7 +30,7 @@
       "itemClass": "model",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2026-04-13",
       "tags": [
         "focal",
         "ontology",
@@ -66,7 +66,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2026-04-13",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -120,7 +120,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2026-04-13",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -175,8 +175,8 @@
             "mediaTypes": [
               {
                 "mimeType": "application/json",
-                "defaultExtension": "json",
-                "label": "JSON"
+                "label": "JSON",
+                "defaultExtension": "json"
               }
             ]
           },
@@ -189,7 +189,7 @@
               "mynamespace": "http://example.com/mythings/"
             }
           },
-          "code": "import json, geopandas as gpd\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Print current CRS\nprint(gdf.crs)\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Convert back to GeoJSON-like dict\noutput_data = json.loads(gdf.to_json())\n"
+          "code": "import json, geopandas as gpd\n\ndata = json.loads(input_data)\n\n# Extract CRS\ncrs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\nepsg_code = crs_name.split(\":\")[-1] if crs_name else None\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Set CRS dynamically\nif epsg_code:\n  gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n# Print current CRS\nprint(\"Transform from CRS\" + str(gdf.crs))\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Print current CRS\nprint(\"            to CRS\" + str(gdf.crs))\n\n# Convert back to GeoJSON-like dict\noutput_data = gdf.to_json()"
         }
       ],
       "documentation": {
