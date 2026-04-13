@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2026-04-13",
+  "dateOfLastChange": "2023-04-05",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -51,19 +51,19 @@
       "snippets": [
         {
           "language": "json",
-          "ref": "example.json",
+          "ref": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/example.json",
           "code": "{\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}\n\n",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.json"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_1_1.json"
         },
         {
           "language": "jsonld",
           "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld\"\n  ],\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.jsonld"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] focal-prop:lesniCHS 25 ;\n    focal-prop:lesniDSOPRL 2025 ;\n    focal-prop:lesniID1 128301 ;\n    focal-prop:lesniOVERT \"NE\" ;\n    focal-prop:lesniOblast 8 ;\n    focal-prop:lesniOblastCast \"a\" ;\n    focal-prop:lesniPCHS \"25a\" ;\n    focal-prop:lesniPLOCHA 1.22425e+03 ;\n    focal-prop:lesniROKMAP 2015 ;\n    focal-prop:lesniSLT \"2S\" ;\n    focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n    focal-prop:lesniUDRZBA 2022 ;\n    focal-prop:lesniZADOST \"-\" ;\n    focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" .\n\n",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.ttl"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_1_1.ttl"
         }
       ]
     },
@@ -74,17 +74,17 @@
         {
           "language": "shell",
           "code": "echo 'Hello, world!'",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_1.shell"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_2_1.shell"
         },
         {
           "language": "python",
           "code": "print('Hello, world!')",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_2.python"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_2_2.python"
         },
         {
           "language": "javascript",
           "code": "console.log('Hello, world!')",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_3.javascript"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/build/tests/focal/mySchema/example_2_3.javascript"
         }
       ]
     }
