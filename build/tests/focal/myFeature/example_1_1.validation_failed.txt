@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-13T09:10:16.366627+00:00
+Generated 2026-04-13T09:15:54.190882+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -20,23 +20,23 @@ On instance['type']:
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for _sources/mySchema/rules.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/mySchema/rules.shacl:
- - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
-
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
  - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: _:N7a15bf5b8b3b434db37971f0c548c7c1,_:Nf7a929f020da4f9ea77a4637b183d6e2,_:N1149505bca754f3889c751a8ca3202ed,_:Nf5c5eabfbd644abbad75675a0d1f25f4,_:N86def996e9364f42b36374cae71e8a70,_:N6ae68d12a4ff4d3d801c33d1c007b27a,_:Ne039c073635849f69189a0d2ae1efe12,_:N07005f363947488187f3fae2e8bb6a2e,_:Nc87ffc0eb6404ad09b677e5e26956f6e,_:N2a0e2381b16e4b99947d9ac0228ba42d,_:N639e5bf96ffe4eb589b3d7665f1cfa04,_:Nc09dc95f782144a181185521995b5f01,_:Nf8b301902f8f44f8b4e4cfb25da37175
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N8074f6651c524a3a8404f29f92dcb25d,_:N62bf3e0f8227483a8dacfc133209bdac,_:N2acbb5c64fc44aa8bc6a7f12af7a12fc,_:N423d78c17bf94fb6b2dbc4506380dc20,_:N46f7d9fced2c4f4db4542fd427610038,_:N66582bd2def04d5f8491f221de4a2ed1,_:N36430a9a30bc4c7797d529b526335dad,_:N82f92357223c417fb0c0cfb83232da16,_:Nc37ee00f887f454ba3cd11ae05ff30f3,_:N716abb1ff9674617b250b15e6aefd3a7,_:N2b94df6d95504c30816692eaafe7358b,_:N682545b3cab24ab0a2a9ad48031f1ef4,_:N3c4e4a141c4b40f2bbfdf657a95d4c55
+
+Validation result for _sources/mySchema/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/mySchema/rules.shacl:
+ - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
 
 === End SHACL ===
 
