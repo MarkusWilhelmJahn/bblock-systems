@@ -28,7 +28,7 @@ In **Markdown** format.
   "LES_OBL": 8,
   "LO_CAST": "a",
   "UDRZBA": 2022,
-  "ZMENA": "Uvedení do souladu s KN",
+  "ZMENA": "Uveden\u00ed do souladu s KN",
   "ZADOST": "-",
   "CHS": 25,
   "PCHS": "25a",
@@ -39,8 +39,6 @@ In **Markdown** format.
   "PLOCHA": 1224.24963,
   "DS_OPRL": 2025
 }
-
-
 ```
 
 #### jsonld
@@ -90,24 +88,6 @@ In **Markdown** format.
     focal-prop:lesniZMENA "Uvedení do souladu s KN" .
 
 
-```
-
-
-### Examples can have content and/or code snippets.
-The content of this example. 
-#### shell
-```shell
-echo 'Hello, world!'
-```
-
-#### python
-```python
-print('Hello, world!')
-```
-
-#### javascript
-```javascript
-console.log('Hello, world!')
 ```
 
 ## Schema
