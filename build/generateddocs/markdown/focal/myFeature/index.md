@@ -32,6 +32,12 @@ This examples shows how to define a customised schema based on an existing build
 ```json
 {
   "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::5514"
+    }
+  },
   "properties": {
     "LT": "2S1",
     "LES_OBL": 8,
@@ -134,6 +140,12 @@ This examples shows how to define a customised schema based on an existing build
     "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld"
   ],
   "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::5514"
+    }
+  },
   "properties": {
     "LT": "2S1",
     "LES_OBL": 8,
