@@ -1,0 +1,46 @@
+Validation report for ogc.focal.myFeatureCollection - Feature Collection for forest type
+Generated 2026-04-13T15:23:11.810598+00:00
+=== Files ===
+Using examples/feature.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:FeatureCollectionShape: _:Nf62dc6ea4fdd4b7cae3d9025d5c80cca
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: _:Nffc0a86039314e33bd35cdae1a7dac6c,_:N86c12de4fc03483d9b2adca2572b0982,_:N878c546450dc41fa837cd0b6a2c7fb28,_:Nc53d5173fcad4e88ad42cf1e220e7b8e,_:Na8860aa3cc8243b28e360a396e9b1743,_:Nf9bca27caf2f49a2a447e87ee613e941,_:N874eeb2ccaad41889ff61a6fb5c89aac,_:Ne629d9ce5fc64b59a0642fc0a8128e72,_:N061d102a522246bdb47db26314eb552c,_:N28ea1dd24d50485f9f6280e1583d0d69,_:N4004aa091ff84869a75103d928c21397,_:N4fecd356302e4d40be614101dece4151,_:N8246cf9a0e3d4f9fa3a69c235295be2b
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+
+Validation result for _sources/myFeature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/myFeature/shapes.shacl:
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:Nffc0a86039314e33bd35cdae1a7dac6c,_:N86c12de4fc03483d9b2adca2572b0982,_:N878c546450dc41fa837cd0b6a2c7fb28,_:Nc53d5173fcad4e88ad42cf1e220e7b8e,_:Na8860aa3cc8243b28e360a396e9b1743,_:Nf9bca27caf2f49a2a447e87ee613e941,_:N874eeb2ccaad41889ff61a6fb5c89aac,_:Ne629d9ce5fc64b59a0642fc0a8128e72,_:N061d102a522246bdb47db26314eb552c,_:N28ea1dd24d50485f9f6280e1583d0d69,_:N4004aa091ff84869a75103d928c21397,_:N4fecd356302e4d40be614101dece4151,_:N8246cf9a0e3d4f9fa3a69c235295be2b
+
+=== End SHACL ===
+
