@@ -2,8 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.iana.org/assignments/> .
-@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -22,14 +22,14 @@
     rdfs:label "FOCAL Ontology" ;
     dct:abstract "RDF contents for the FOCAL ontology"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-04-09T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-04-13"^^xsd:date ;
+    dct:modified "2026-04-20"^^xsd:date ;
     skos:inScheme <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     skos:prefLabel "FOCAL Ontology" ;
     skos:topConceptOf <https://markuswilhelmjahn.github.io/bblock-systems/> ;
@@ -50,47 +50,47 @@
     rdfs:label "Feature Collection for forest type" ;
     dct:abstract "This examples shows a simple customisation for OGC API Feature schemas"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeatureCollection/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.myFeatureCollection> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeatureCollection/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeatureCollection/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeatureCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-04-13"^^xsd:date ;
+    dct:modified "2026-04-20"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     skos:prefLabel "Feature Collection for forest type" ;
     skos:topConceptOf <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     dcat:keyword "examples",
         "feature" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.focal.myFeature>,
         <bblocks://ogc.geo.features.featureCollection> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -101,18 +101,18 @@
 
 <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N3707d42ca0e54e0dab2a0a33beece209 ;
+    prov:wasAttributedTo _:Nb8e133454c534620981530b9fd796572 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-04-13T15:23:25.419451"^^xsd:dateTime ;
-            prov:startedAtTime "2026-04-13T15:23:25.242988"^^xsd:dateTime ;
+            prov:endedAtTime "2026-04-20T09:45:43.858431"^^xsd:dateTime ;
+            prov:startedAtTime "2026-04-20T09:45:43.689969"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:9d764f09113c9a2b5802f9a53dced95faa894ef3" ;
+                    dct:hasVersion "git:f9ef67cc5ce22299e42793628c3caf692acfa1f7" ;
                     rdfs:seeAlso <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N3707d42ca0e54e0dab2a0a33beece209 ] .
+            prov:wasAssociatedWith _:Nb8e133454c534620981530b9fd796572 ] .
 
 <bblocks://ogc.focal.mySchema> a skos:Concept,
         dcat:Dataset,
@@ -123,25 +123,25 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.mySchema> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-04-13"^^xsd:date ;
+    dct:modified "2026-04-20"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     skos:prefLabel "My Schema" ;
     skos:topConceptOf <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     dcat:keyword "templates" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld> ;
             prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml> ;
@@ -160,24 +160,25 @@
     rdfs:label "Custom Feature" ;
     dct:abstract "This examples shows a simple customisation for OGC API Feature schemas"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.myFeature> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeature/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.myFeature> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2026-04-13"^^xsd:date ;
+    dct:modified "2026-04-20"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     skos:prefLabel "Custom Feature" ;
     skos:topConceptOf <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     dcat:keyword "examples",
         "feature" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
@@ -188,14 +189,13 @@
             prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
-            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.focal.mySchema>,
         <bblocks://ogc.geo.features.feature> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -209,11 +209,11 @@
     dct:abstract """This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:description """### The Story
-As a Forest Data Provider (e.g. a forestry researcher), I want to provide my "normal GIS" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.
+As a Forest Data Provider (e.g. a forestry researcher), I want to provide my "normal GIS" data (e.g. typology derived by photogrammetry and remote sensing) in a way that my data is conform to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. As a platform operator who follows the OGC Smart concepts, I know that domain specific profiles can be provided by public registers to ensure public consistency of distributed digital twins. Using those profiles turns the local typology data of the data provider into machine-interpretable knowledge that can be used to extend the distributed digital twin of forest typologies or can be automatically integrated into more complex distributed digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.
 
-The FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  
+This story illustrates the transition from "normal GIS" (manual overlays and scripts) to a standards-mediated geo-data supply chain. By implementing the Forest Typology OGC Block, the data provider removes the need for bespoke engineering. Instead of rebuilding a pipeline for every new forest, the provider publishes the Forest Typology OGC Block definitions as the "input/output contract" of a consistent distributed digital twin for forest typologies, allowing AI agents to navigate semantic gaps automatically and provide validated decision support. 
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-04-13T15:23:07.976133"^^xsd:dateTime ;
+    dct:modified "2026-04-20T09:45:28.100397"^^xsd:dateTime ;
     void:sparqlEndpoint <http://defs-hosted.opengis.net/fuseki-hosted/query> ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.focal.focal-ontology>,
@@ -221,22 +221,22 @@ The FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for th
         <bblocks://ogc.focal.myFeatureCollection>,
         <bblocks://ogc.focal.mySchema> ;
     skos:prefLabel "Building Blocks - FOCAL Forest Typology OGC Smart Blocks repository" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> ],
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld> ] ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl> ] ;
     foaf:homepage <https://markuswilhelmjahn.github.io/bblock-systems/> ;
     bblocks:hasValidationReport <https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.html> .
 
-_:N3707d42ca0e54e0dab2a0a33beece209 a prov:Agent,
+_:Nb8e133454c534620981530b9fd796572 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.28" ;

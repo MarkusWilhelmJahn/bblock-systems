@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-13T15:23:10.155248+00:00
+Generated 2026-04-20T09:45:30.243468+00:00
 === Files ===
 Using ../myFeatureCollection/examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -17,18 +17,18 @@ Validation result for _sources/myFeature/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/myFeature/shapes.shacl:
- - Shape <https://example.com/focal/feature-lesniTyp>: _:Ndd7cd0b5f70f40c19e7268cb2d46ecd9
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:N92c120ea616249bfbd59842e8ab831b4
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Ndd7cd0b5f70f40c19e7268cb2d46ecd9
- - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N92c120ea616249bfbd59842e8ab831b4
+ - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
 
 === End SHACL ===
 

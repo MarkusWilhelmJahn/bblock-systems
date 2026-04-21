@@ -10,6 +10,12 @@
   "features": [
     {
       "type": "Feature",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:EPSG::5514"
+        }
+      },
       "properties": {
         "LT": "2S1",
         "LES_OBL": 8,

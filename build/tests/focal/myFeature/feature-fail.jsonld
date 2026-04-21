@@ -1,6 +1,12 @@
 {
   "@context": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
   "type": "Feature",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::5514"
+    }
+  },
   "properties": {
     "LES_OBL": 8,
     "LO_CAST": "a",
@@ -31,7 +37,7 @@
           ],
           [
             -785331.7395455441,
-            -1062484.7895138361
+            -1062484.789513836
           ],
           [
             -785328.9995457674,
@@ -51,7 +57,7 @@
           ],
           [
             -785319.6595456105,
-            -1062484.2795136091
+            -1062484.279513609
           ],
           [
             -785312.5495449909,
